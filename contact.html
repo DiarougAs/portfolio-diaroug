@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Amadou Diarouga Soumah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #e8f0f8; /* même bleu clair que le portfolio */
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: #222;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      border-radius: 15px;
+      padding: 40px 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 30px;
+      color: #00aaff;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    input, textarea {
+      padding: 15px;
+      font-size: 1rem;
+      border: 1.5px solid #00aaff;
+      border-radius: 8px;
+      resize: vertical;
+      font-family: 'Poppins', sans-serif;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #007acc;
+      box-shadow: 0 0 8px #007acc;
+    }
+    button {
+      width: 150px;
+      padding: 12px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      align-self: center;
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+    button:hover {
+      background-color: #007acc;
+    }
+    a.back-link {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 700;
+      color: #00aaff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    a.back-link:hover {
+      color: #007acc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contactez-moi</h1>
+    <form method="post" action="#">
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour au portfolio</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
